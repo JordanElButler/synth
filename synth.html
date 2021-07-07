@@ -1,12 +1,13 @@
+
 <!doctype html>
 <html>
 <head>
   <meta charset="utf-8">
   <title>Synth</title>
+  <script src="Pizzicato.js"></script>
   <script src="synth.js"></script>
   <style>
     body {
-      background-color: black;
     }
     canvas {
       margins: 0 0;
@@ -15,5 +16,19 @@
   </style>
 </head>
 <body onload="init()">
+
+<label for="scale-select">Choose a scale:</label>
+<select id="scale-selector" name="scales" id="scale-select">
+    <option value="chromatic" selected>chromatic</option>
+    <option value="diatonic">diatonic</option>
+    <option value="sc3">sc3</option>
+    <option value="sc4">sc4</option>
+    <option value="sc5">sc5</option>
+    <option value="sc6">sc6</option>
+    <option value="sc7">sc7</option>
+    <option value="sc8">sc8</option>
+    <option value="sc9">sc9</option>
+    <option value="sc10">sc10</option>
+</select>
 </body>
 </html>
